@@ -1,0 +1,42 @@
+
+
+<img src="http://i60.tinypic.com/2gx41g7.png" width="650" height="300" class="checklist">
+
+<p><a href="/new_todo">Add a New To-do </a></p>
+
+<table>
+  <thead>
+    <tr>
+    <th> My Current To-do </th>
+      <h1><th>List </th></h1>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @todos.each do |todo| %>
+    <tr>
+          <td><%= todo.list_id %></td>
+          <td><%= todo.reminder %></td>
+          <td><a href="/todos/<%= todo.id %>">Show</a>
+        </td>
+      <td><a href="/todos/<%= todo.id %>/edit"> Edit </a></td>
+      <td><a href="/todos/<%= todo.id %>/destroy"> Destroy </a></td>
+   
+    </tr>
+  <% end %>
+ 
+ 
+  </tbody>
+  
+
+
+
+</table>
+
+
+
+
+

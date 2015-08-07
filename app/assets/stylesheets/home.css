@@ -1,0 +1,21 @@
+body{background-color: }
+
+.logobg{
+    text-align:center;
+    background-color: white;
+}
+
+.btn-group btn-group-justified{
+    margin-right: 400px;
+    margin-left: 1000px;
+} 
+
+
+.listify{
+    margin-right: 200px;
+    margin-left: 200px;
+} 
+
+.checklist{
+    text-align:center;
+} 

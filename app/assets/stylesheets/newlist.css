@@ -1,0 +1,16 @@
+.newlist{
+    text-align:center;
+    background-color: white;
+}
+
+.pager{
+    
+    margin-right: 200px;
+    margin-left: 200px;
+} 
+
+.col-lg-12{
+    
+    margin-right: 5px;
+    margin-left: -48px;
+} 

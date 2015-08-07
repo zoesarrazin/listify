@@ -1,0 +1,27 @@
+<h1>List #<%= @list.id %></h1>
+
+<div class="mylist">
+    <img src="http://i62.tinypic.com/2gt6m4z.png" width="650" height="300" class="logo">
+</div>
+
+<div>
+  <strong>Name</strong>:<br />
+  <p><%= @list.name %></p>
+</div>
+
+<ul>
+<% @todos.each do |todo| %>
+  <li><%= todo.reminder %> </li>
+  <% end %>
+
+  <nav>
+  <ul class="pager">
+  
+<a href="/lists/<%= @list.id %>/edit">Edit</a> |
+<a href="/lists/<%= @list.id %>/destroy">Destroy</a>
+  </ul>
+</nav>
+
+  
+ 
+ 

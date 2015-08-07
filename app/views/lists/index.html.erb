@@ -1,0 +1,27 @@
+<h1>Lists</h1>
+
+<p><a href="/new_list">Add a New List</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @lists.each do |list| %>
+    <tr>
+          <td><%= list.name %></td>
+          <td><a href="/lists/<%= list.id %>">Show</a>
+        </td>
+      <td><a href="/lists/<%= list.id %>/edit">Edit</a></td>
+      <td><a href="/lists/<%= list.id %>/destroy">Destroy</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+

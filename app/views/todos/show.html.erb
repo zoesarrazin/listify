@@ -1,0 +1,15 @@
+<h1>Todo #<%= @todo.id %></h1>
+
+<div>
+  <strong>List</strong>:<br />
+  <p><%= @todo.list_id %></p>
+</div>
+<div>
+  <strong>Reminder</strong>:<br />
+  <p><%= @todo.reminder %></p>
+</div>
+
+<a href="/todos/<%= @todo.id %>/edit">Edit</a> |
+<a href="/todos/<%= @todo.id %>/destroy">Destroy</a> |
+<a href="/todos">go back to my To-do List</a>
+
